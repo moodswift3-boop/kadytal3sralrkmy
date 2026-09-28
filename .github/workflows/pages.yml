@@ -1,4 +1,4 @@
-name: Deploy SwiftWarm Launch Studio to GitHub Pages
+name: Deploy Qadyat Al Asr Alraqmy to GitHub Pages
 
 on:
   push:
@@ -21,10 +21,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout SwiftWarm Studio
+      - name: Checkout Qadyat Al Asr Alraqmy
         uses: actions/checkout@v6
         with:
-          repository: moodswift3-boop/swiftwarm-studio
+          repository: moodswift3-boop/kadytal3sralrkmy
           ref: main
 
       - name: Setup Pages
