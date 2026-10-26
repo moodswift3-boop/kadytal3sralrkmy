@@ -10,3 +10,16 @@
 .video-caption h3{margin:0 0 6px;color:var(--gold)}
 .video-caption p{margin:0;color:var(--muted);font-size:14px}
 @media(max-width:560px){.video-grid{grid-template-columns:1fr}.video-card video{max-height:70vh}}
+
+
+/* Accessibility and responsive polish */
+html{scroll-padding-top:24px}
+:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.btn,.ghost,.nav nav a,.social-links a{transition:transform .18s ease,background-color .18s ease,color .18s ease,opacity .18s ease}
+.btn:hover{transform:translateY(-2px);background:#e5c982}
+.ghost:hover,.social-links .ghost:hover{color:var(--gold)}
+.video-card{height:100%;display:flex;flex-direction:column}
+.video-card video{width:100%;object-fit:contain}
+.video-caption{flex:1}
+@media(max-width:560px){.nav{padding-inline:16px}.nav nav{scrollbar-width:thin}.actions{flex-wrap:wrap}.trust{gap:10px}.video-grid{grid-template-columns:minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
